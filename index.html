@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>নিউ জুয়েলার্স - New Jewellers</title>
+    <style>
+        body {
+            font-family: 'Hind Siliguri', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f0f2f5;
+            padding-bottom: 80px;
+        }
+
+        /* হেডার */
+        .header {
+            background: #fff;
+            padding: 10px 15px;
+            display: flex;
+            justify-content: flex-end;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .gold-rates {
+            background: #000080;
+            color: white;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(0,0,80,0.3);
+        }
+
+        /* 3D এবং RGB টেক্সট সেকশন */
+        .three-d-box {
+            margin: 25px auto;
+            width: 85%;
+            background: #ffffff;
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            /* 3D উঁচুতে থাকার ইফেক্ট */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1), 
+                        0 6px 6px rgba(0,0,0,0.1),
+                        inset 0 -5px 10px rgba(0,0,0,0.05);
+            transform: translateY(-5px);
+            border: 1px solid rgba(255,255,255,0.8);
+        }
+
+        /* RGB টেক্সট এনিমেশন */
+        .rgb-text {
+            font-size: 2.2rem;
+            margin: 0;
+            font-weight: bold;
+            background: linear-gradient(to right, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+            background-size: 200% auto;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            animation: text-glow 3s linear infinite;
+        }
+
+        @keyframes text-glow {
+            to { background-position: 200% center; }
+        }
+
+        .proprietor {
+            font-size: 1rem;
+            color: #555;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .address {
+            font-size: 0.9rem;
+            color: #000080;
+            background: rgba(0,0,128,0.05);
+            padding: 5px;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+
+        /* গ্যালারি কার্ড */
+        .product-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+            padding: 0 20px;
+        }
+
+        .product-card {
+            background: white;
+            border-radius: 15px;
+            padding: 25px 10px;
+            text-align: center;
+            font-weight: bold;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-bottom: 3px solid #000080;
+        }
+
+        /* বটম বার */
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            background: rgba(255,255,255,0.95);
+            backdrop-filter: blur(10px);
+            display: flex;
+            justify-content: space-around;
+            padding: 15px 0;
+            box-shadow: 0 -5px 20px rgba(0,0,0,0.08);
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .whatsapp-link {
+            color: #25D366;
+            text-shadow: 0 0 1px rgba(0,0,0,0.1);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="header">
+        <div class="gold-rates">
+            ২২ ক্যারেট: ৳১,১৫,৫০০ | ২১ ক্যারেট: ৳১,১০,০০০
+        </div>
+    </div>
+
+    <div class="three-d-box">
+        <div class="proprietor">প্রোপ্রাইটর: বাবলু মিয়া</div>
+        <h1 class="rgb-text">নিউ জুয়েলার্স</h1>
+        <p style="margin: 5px 0; font-weight: bold; color: #444;">New Jewellers</p>
+        <p style="margin: 5px 0; font-size: 0.8rem; color: #777; font-style: italic;">"আজকের বিলাসিতা আগামী দিনের সম্পদ"</p>
+        <div class="address">📍 আমিরুল সুপার মার্কেট, গাংনী, মেহেরপুর</div>
+    </div>
+
+    <div style="padding: 0 20px; margin-bottom: 10px; font-weight: bold; color: #333;">✨ আমাদের কালেকশন</div>
+    <div class="product-grid">
+        <div class="product-card">💍 আংটি</div>
+        <div class="product-card">📿 নেকলেস</div>
+        <div class="product-card">👂 কানের দুল</div>
+        <div class="product-card">⛓️ চেইন</div>
+    </div>
+
+    <nav class="bottom-nav">
+        <a href="#" class="nav-item">🏠 হোম</a>
+        <a href="https://wa.me/8801858348299" class="nav-item whatsapp-link">
+            💬 আলাপ করুন: 01858348299
+        </a>
+    </nav>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAZJW2EUgVacMlquUMOWap1UEsClr1o5UU",
+    authDomain: "new-jewellers.firebaseapp.com",
+    projectId: "new-jewellers",
+    storageBucket: "new-jewellers.firebasestorage.app",
+    messagingSenderId: "152404549154",
+    appId: "1:152404549154:web:95477c7f53c41c7646f47b",
+    measurementId: "G-JLBYFNHSGQ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>
